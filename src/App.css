@@ -1,0 +1,167 @@
+body{
+    background-color: #2e2e35;
+}
+
+.Header{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    color: #e1a847;
+    
+}
+
+.HeaderRight{
+    display:flex;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.dash{
+    background-color: #e1a847;
+    height:0.5px;
+    width:1200px;
+    margin-left: 160px;
+    margin-top: 40px;
+}
+
+.Introduction{
+    color: #e1a847;
+    margin: 160px;
+}
+
+.skills{
+    color: #e1a847;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+
+a {
+    position: relative;
+    color: #e1a847;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #e1a847;
+  }
+  
+  a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e1a847;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+  }
+
+.skilllogo{
+    height:100px;
+    width:100px;
+    border-radius: 5px;
+}
+
+.heading{
+    margin-bottom:40px ;
+}
+.skilldetails{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 150px;
+}
+.singleskill{
+    width:200px;
+
+   
+}
+
+.workexperience{
+    color: #e1a847;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top:100px
+
+}
+
+.dash2{
+    background-color: #e1a847;
+    height:0.5px;
+    width:1200px;
+    margin-left: 160px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.contactme{
+    color: #e1a847;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contactmeform{
+    width:600px;
+    height:500px;
+    /* border: 1px solid  #e1a847; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.contactmeform label{
+    color: #e1a847;
+    font-size: 20px;
+
+}
+
+.contactmeform input{
+    border-radius: 5px;
+    border:none;
+    height:20px;
+    width:300px;
+    padding:5px
+}
+.contactmeform textarea{
+    border-radius: 5px;
+    border:none;
+    width:300px;
+    height:100px;
+    padding:5px
+}
+.formcontainer{
+    display:flex;
+    justify-content: center;
+
+}
+#sendbutton{
+   
+    height:32px;
+    width:75px;
+    align-items: center;
+    margin-left:40% ;
+    background-color: #e1a847;
+    color:white;
+    font-size: 18px;
+}
+#sendbutton:hover{
+    background-color: white;
+    color:black;
+    transform: scale(1.2);
+}
+
+
+.footer{
+    color:#e1a847
+}
+
+
+
+
