@@ -71,7 +71,7 @@ function App() {
         INTRODUCTION
         <h1 style={{ color: "white" }}>Software Engineer</h1>
         <p style={{ color: "white", fontSize: 25 }}>
-          As a software engineer with 1 year of experience, I am skilled in
+          As a software engineer with 3 year of experience, I am skilled in
           developing and maintaining high-quality software applications that
           meet the needs of end-users. Throughout my career, I have experience
           collaborating with cross-functional teams, including product managers,
