@@ -1,0 +1,11 @@
+.main {
+    max-width: 1000px;
+    padding: 100px;
+    margin: auto;
+
+}
+
+.fact_container {
+    border: 2px solid #FFFFFF;
+    padding: 20px;
+}
