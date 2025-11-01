@@ -1,7 +1,7 @@
 import { Typography, Box } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import { txt, punchLines } from "../constants";
+import { punchLines } from "../constants";
 import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
 
@@ -42,7 +42,7 @@ const Home = () => {
       {/* ✅ Fact of the Day (Desktop + Mobile handled by MUI breakpoints) */}
       <Box className="main">
         <Typography
-          variant={{ xs: "h6", md: "h3" }}
+          // variant={{ xs: "h6", md: "h3" }}
           sx={{
             fontFamily: "monospace",
             fontWeight: { xs: 500, md: 700 },
@@ -52,6 +52,7 @@ const Home = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            fontSize: { md: "35px", xs: "20px" },
           }}
         >
           <div className="fact_container">
@@ -65,11 +66,11 @@ const Home = () => {
           fontFamily: "monospace",
           fontSize: { md: "40px", xs: "20px" },
           color: "#FFFFFF",
-          marginTop: "50px",
-          marginBottom: "40px",
+          marginTop: "70px",
+          marginBottom: "60px",
         }}
       >
-        --------Experience--------
+        Experience
       </Typography>
       {/* ✅ Render Experiences */}
       {experiences.map((exp, idx) => (
@@ -80,14 +81,14 @@ const Home = () => {
           fontFamily: "monospace",
           fontSize: { md: "40px", xs: "20px" },
           color: "#FFFFFF",
-          marginTop: "50px",
-          marginBottom: "40px",
+          marginTop: "70px",
+          marginBottom: "60px",
         }}
       >
-        --------Skills--------
+        Skills
       </Typography>
 
-      <Box sx={{ mt: 6, height: "1000px" }}>
+      <Box sx={{ mt: 6, height: "600px" }}>
         <Skills />
       </Box>
     </Box>
