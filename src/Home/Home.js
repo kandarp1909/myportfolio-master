@@ -4,6 +4,7 @@ import "./Home.css";
 import { punchLines } from "../constants";
 import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
+import Blogs from "../Blogs/Blogs";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -88,9 +89,22 @@ const Home = () => {
         Skills
       </Typography>
 
-      <Box sx={{ mt: 6, height: "600px" }}>
+      <Box sx={{ mt: 6, height: "300px" }}>
         <Skills />
       </Box>
+
+       <Typography
+        sx={{
+          fontFamily: "monospace",
+          fontSize: { md: "40px", xs: "20px" },
+          color: "#FFFFFF",
+          marginTop: "70px",
+          marginBottom: "30px",
+        }}
+      >
+        Blogs
+      </Typography>
+      <Blogs/>
     </Box>
   );
 };
