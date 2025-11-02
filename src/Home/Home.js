@@ -5,6 +5,7 @@ import { punchLines } from "../constants";
 import Experience from "../Experience/Experience";
 import Skills from "../Skills/Skills";
 import Blogs from "../Blogs/Blogs";
+import ContactForm from "../Email/ContactForm";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -89,11 +90,11 @@ const Home = () => {
         Skills
       </Typography>
 
-      <Box sx={{ mt: 6, height: "300px" }}>
+      <Box sx={{ mt: 6, height: "100%" }}>
         <Skills />
       </Box>
 
-       <Typography
+      <Typography
         sx={{
           fontFamily: "monospace",
           fontSize: { md: "40px", xs: "20px" },
@@ -104,7 +105,19 @@ const Home = () => {
       >
         Blogs
       </Typography>
-      <Blogs/>
+      <Blogs />
+      <Typography
+        sx={{
+          fontFamily: "monospace",
+          fontSize: { md: "40px", xs: "20px" },
+          color: "#FFFFFF",
+          marginTop: "70px",
+          marginBottom: "30px",
+        }}
+      >
+        Happy to connect
+      </Typography>
+      <ContactForm />
     </Box>
   );
 };

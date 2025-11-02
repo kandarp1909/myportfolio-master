@@ -10,7 +10,6 @@ import Container from "@mui/material/Container";
 import "./Header.css";
 
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 function Header() {
 
