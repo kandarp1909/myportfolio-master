@@ -68,7 +68,7 @@ const ContactForm = () => {
         variant="outlined"
         fullWidth
         required
-        InputLabelProps={{ style: { color: "white" } }}
+        InputLabelProps={{ style: { color: "white", fontFamily:"monospace" } }}
         sx={{ input: { color: "white" } }}
       />
 
@@ -81,7 +81,7 @@ const ContactForm = () => {
         required
         error={!!emailError}
         helperText={emailError}
-        InputLabelProps={{ style: { color: "white" } }}
+        InputLabelProps={{ style: { color: "white",fontFamily:"monospace"  } }}
         sx={{
           input: { color: "white" },
           "& .MuiFormHelperText-root": { color: "salmon" },
@@ -96,7 +96,7 @@ const ContactForm = () => {
         variant="outlined"
         fullWidth
         required
-        InputLabelProps={{ style: { color: "white" } }}
+        InputLabelProps={{ style: { color: "white",fontFamily:"monospace"  } }}
         sx={{ textarea: { color: "white" } }}
       />
 
@@ -110,7 +110,7 @@ const ContactForm = () => {
           "&:hover": { background: "rgba(255,255,255,0.3)" },
         }}
       >
-        Send Message
+        Send
       </Button>
 
       {status && (

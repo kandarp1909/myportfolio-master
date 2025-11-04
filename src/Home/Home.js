@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % punchLines.length);
-    }, 10000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -117,7 +117,9 @@ const Home = () => {
       >
         Happy to connect
       </Typography>
+      <Box sx={{ mt: 6, height: "100%",mb:10 }}>
       <ContactForm />
+      </Box>
     </Box>
   );
 };
